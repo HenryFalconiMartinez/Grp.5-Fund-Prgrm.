@@ -154,16 +154,27 @@ public class TrabajoFInal {
         return codigoDis;
     }
 
+private static int obtenerPrecio(int cantidad,String[] tarifaZona) {
+        int precio;
+        switch (tarifaZona){
+            case "Regular" -> {precio= 500;}
+            case "Express" -> precio = 1500;
+         default -> precio = -1;
+        }
+        return precio;
+    }
 
 
 }
+                               
+                               
 /*ICA 12
         CHINCHA 12
         PISCO 12
         CAÑETE 12
-        NAZCA 12  2 KILOS 17
-        AREQUIPA 15 2 KILOS 19
+        NAZCA 12  
+        AREQUIPA 15 
         CUSCO 15
-        PIURA 12   2 KILOS 17
+        PIURA 12  
         TUMBES  12
-        TACNA  15 */
+        TACNA  15 
